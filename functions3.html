@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Functions: Task 2</title>
+    <title>Functions: Task 3</title>
     <style>
       p {
         color: purple;
@@ -12,10 +12,6 @@
       * {
         box-sizing: border-box;
       }
-
-      canvas {
-        border: 1px solid black;
-      }
     </style>
     <link rel="stylesheet" href="../styles.css" />
   </head>
@@ -24,28 +20,22 @@
 
     <section class="preview">
 
+
+
     </section>
-
-    <canvas width="480" height="320">
-
-    </canvas>
 
   </body>
   <script>
-    let canvas = document.querySelector('canvas');
-    let ctx = canvas.getContext('2d');
-
-    let x = 50;
-    let y = 60;
-    let width = 100;
-    let height = 75;
-    let color = 'blue';
+    let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+    let para = document.createElement('p');
 
     // Add your code here
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
+
+    section.appendChild(para);
   </script>
 
 </html>
