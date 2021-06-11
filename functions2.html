@@ -26,7 +26,7 @@
 
     </section>
 
-    <canvas width="480" height="320">
+    <canvas width="320" height="200">
 
     </canvas>
 
@@ -35,13 +35,21 @@
     let canvas = document.querySelector('canvas');
     let ctx = canvas.getContext('2d');
 
-    let x = 50;
-    let y = 60;
-    let width = 100;
-    let height = 75;
-    let color = 'blue';
+    let x = 30;
+    let y = 30;
+    let width = 75;
+    let height = 50 ;
+    let color = 'green';
 
     // Add your code here
+
+    function drawRectangle(x, y, width, height, color) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = color;
+      ctx.fillRect(x, y, width, height);
+    }
+
+    drawRectangle(x, y, width, height, color);
 
     // Don't edit the code below here!
 
